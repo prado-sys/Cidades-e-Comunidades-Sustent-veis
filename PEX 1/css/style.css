@@ -1,0 +1,130 @@
+/* GERAL E VARIAVEIS */
+:root {
+    --primary-color: #005A8D; /* Azul escuro */
+    --secondary-color: #007BBE; /* Azul médio */
+    --accent-color: #00A9E0; /* Azul claro */
+    --danger-color: #C62828; /* Vermelho para alertas */
+    --bg-color: #F8F9FA; /* Fundo cinza claro */
+    --text-color: #343A40;
+    --light-text-color: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://g1.globo.com/pe/pernambuco/noticia/2025/07/28/chuva-no-grande-recife-provoca-alagamentos-e-suspensao-de-aulas-confira-previsao-do-tempo-da-apac.ghtml) no-repeat center center/cover;
+    color: var(--light-text-color);
+    padding: 6rem 0;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00C4FF;
+    transform: translateY(-3px);
+}
+
+/* LINKS EXTERNOS */
+.external-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s;
+}
+.external-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* SEÇÃO 'O QUE SÃO' */
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.text-content, .image-content {
+    flex: 1;
+    min-width: 300px;
+}
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+/* ZONA DE PERIGO (ENCHENTES) */
+.danger-zone {
+    background-color: #FFF2F2;
+}
+.danger-zone h2 {
+    color: var(--danger-color);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
